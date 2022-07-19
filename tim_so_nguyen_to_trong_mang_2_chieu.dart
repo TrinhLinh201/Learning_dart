@@ -2,7 +2,10 @@ import 'dart:io';
 import 'dart:math';
 
 void main() {
-  int row = 3, col = 4;
+  print("row:");
+  int row = int.parse(stdin.readLineSync()!);
+  print("column:");
+  int col = int.parse(stdin.readLineSync()!);
   List arr = List.generate(
       row, (_) => List.generate(col, (_) => int.parse(stdin.readLineSync()!)));
   print("print matrix:");
