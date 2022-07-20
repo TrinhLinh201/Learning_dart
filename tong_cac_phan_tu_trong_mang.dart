@@ -4,11 +4,11 @@ void main() {
   List<int> arr = [];
   int n = 8;
 
-  nhapMang(arr, n);
+  inputArray(arr, n);
   print("${tongMang(arr)}");
 }
 
-void nhapMang(List<int> arr, int n) {
+void inputArray(List<int> arr, int n) {
   for (int i = 0; i < n; i++) {
     arr.add(int.parse(stdin.readLineSync()!));
   }
