@@ -9,20 +9,13 @@ void main() {
       row, (_) => List.generate(col, (_) => int.parse(stdin.readLineSync()!)));
   print("print matrix:");
   printPrime(arr, row, col);
-  //printMatrix(arr, row);
 }
-
-// void printMatrix(List arr, int row) {
-//   for (int i = 0; i < row; i++) {
-//     print("${arr[i]}");
-//   }
-// }
 
 bool isPrime(int n) {
   if (n < 2) {
     return false;
   }
-  //int squareRoot = int. sqrt(n);
+
   int i;
   for (i = 2; i < n; i++) {
     if (n % i == 0) {
