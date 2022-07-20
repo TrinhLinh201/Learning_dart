@@ -19,23 +19,11 @@ void sort(List arr, int row, int col) {
     }
   }
   int count = 0;
-  sortUpAscending(arr2);
+  arr2.sort();
   for (var i = 0; i < row; i++) {
     for (var j = 0; j < col; j++) {
       arr[i][j] = arr2[count];
       count++;
-    }
-  }
-}
-
-void sortUpAscending(List arr) {
-  for (int i = 0; i < arr.length; i++) {
-    for (int j = i; j < arr.length; j++) {
-      if (arr[i] > arr[j]) {
-        int temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
-      }
     }
   }
 }
