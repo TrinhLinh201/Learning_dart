@@ -8,7 +8,6 @@ void main() {
   print("print matrix:");
   sort(arr, row, col);
 
-  //printPrime(arr, row, col);
   printMatrix(arr, row);
 }
 
