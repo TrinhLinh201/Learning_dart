@@ -1,8 +1,6 @@
-import 'dart:ffi';
 import 'dart:io';
 
 void main() {
-  List<Char> arr = [];
   String str, x;
   print("input string:");
   str = stdin.readLineSync()!;
