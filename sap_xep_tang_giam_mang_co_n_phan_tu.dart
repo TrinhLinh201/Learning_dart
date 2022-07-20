@@ -4,43 +4,28 @@ void main() {
   List<int> arr = [];
   int n = 8;
 
-  nhapMang(arr, n);
-  sapXepGiamDan(arr);
-  inMang(arr);
-  sapXepTangDan(arr);
-  inMang(arr);
+  inputArray(arr, n);
+  arr.sort();
+  printArray(arr);
+  arr.sort((a, b) => ALessThanB(a, b));
+  printArray(arr);
 }
 
-void nhapMang(List<int> arr, int n) {
+void inputArray(List<int> arr, int n) {
   for (int i = 0; i < n; i++) {
     arr.add(int.parse(stdin.readLineSync()!));
   }
 }
 
-void sapXepTangDan(List<int> arr) {
-  for (int i = 0; i < arr.length; i++) {
-    for (int j = i; j < arr.length; j++) {
-      if (arr[i] < arr[j]) {
-        int temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
-      }
-    }
-  }
+int ALessThanB(int a, int b) {
+  if (a < b)
+    return 1;
+  else if (a > b)
+    return -1;
+  else
+    return 0;
 }
 
-void sapXepGiamDan(List<int> arr) {
-  for (int i = 0; i < arr.length; i++) {
-    for (int j = i; j < arr.length; j++) {
-      if (arr[i] > arr[j]) {
-        int temp = arr[i];
-        arr[i] = arr[j];
-        arr[j] = temp;
-      }
-    }
-  }
-}
-
-void inMang(List<int> arr) {
+void printArray(List<int> arr) {
   print("$arr");
 }
