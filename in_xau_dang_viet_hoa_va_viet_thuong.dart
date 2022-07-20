@@ -6,6 +6,6 @@ void main() {
   print("input string:");
   str = stdin.readLineSync()!;
 
-  print("Uppercase: ${str.toUpperCase()}");
-  print("Lowercase: ${str.toLowerCase()}");
+  print("Uppercase: ${str.toLowerCase()}");
+  print("Lowercase: ${str.toUpperCase()}");
 }
